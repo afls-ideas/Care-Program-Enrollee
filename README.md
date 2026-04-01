@@ -134,6 +134,8 @@ erDiagram
     CareProgramEnrollee ||--o{ CareProgramEnrollmentCard : "holds"
 ```
 
+📖 [Care Program Data Model — Salesforce LSC Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.life_sciences_dev_guide.meta/life_sciences_dev_guide/hc_care_program_data_model.htm)
+
 ---
 
 ## DbSchema Records
