@@ -1,17 +1,8 @@
 # Care Program Enrollee — Salesforce LSC Mobile Configuration
 
-This project contains the Life Sciences Cloud (LSC) metadata configuration for offline sync of the **Care Program Enrollee** data model in the `260-pm` org.
+![Care Program Enrollee Demo](assets/CareEnrollment_Screenshots.gif)
 
-## Org
-
-| Setting | Value |
-|---|---|
-| Alias | `260-pm` |
-| Username | `peter.yeung@lsc4ce-260-pm.org` |
-| API Version | `65.0` |
-| Profile | `Field Sales Representative` |
-
----
+This project contains the Life Sciences Cloud (LSC) metadata configuration for offline sync of the **Care Program Enrollee** data model.
 
 ## Data Model
 
@@ -188,3 +179,10 @@ The `Field Sales Representative` profile has been granted **Read + Create** on a
 | `CodeSetBundle` *(dependency)* | ✅ | — |
 
 Tab visibility for `CareProgramEnrollee` is set to **Default On**.
+
+---
+
+## Limitations
+
+- **Path Component (Chevrons):** The standard Salesforce Path component is not supported on the AFLS mobile app. Use the AFLS **Workflow StagePath** functionality instead.
+- **OmniStudio FlexCards:** FlexCards are not currently supported on AFLS mobile. Any UI using FlexCards will need to be swapped out for supported components.
